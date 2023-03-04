@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- octomoosey @ tumblr --&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;&lt;title&gt;{Title}&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="shortcut icon" href="{Favicon}"&gt;</p>
+<p class="p1">&lt;link rel="alternate" type="application/rss+xml" href="{RSS}"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'&gt;</p>
+<p class="p1">&lt;script src="http://static.tumblr.com/zsy3qon/nxfo82yns/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="http://static.tumblr.com/zsy3qon/f5bo82yl2/visuallightbox.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style type="text/css"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">@import url(http://fonts.googleapis.com/css?family=Fjalla+One&amp;subset=latin,latin-ext);</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1overlay{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>left:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:190;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color:#BBBBBB;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1lightbox{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:20px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>left:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:200;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:center;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>color:#FFFFFF;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>line-height:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>padding-top: 20px;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1lightbox td{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>vertical-align:top;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1lightbox a, #vlb1lightbox a:hover {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>border-bottom:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>color:#FFFFFF;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-decoration:underline;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1lightbox a img{ border:none; }</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1outerImageContainer{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:auto; /* without this line error in IE8 detected */</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0 auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:relative;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1lightboxImage{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:100%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1imageContainerMain{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0 auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow:visible;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:0;/* ie fix - big info bar*/</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1imageContainer{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:150px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:30px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0 auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow:hidden;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color:#fff;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:0;/* ie fix - big info bar*/</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1loading{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:40%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>left:0%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:25%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:center;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:10px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:1;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1loadingLink {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0 auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>padding:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:32px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:32px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background:url(loading.gif) center center no-repeat;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-indent:-9999px;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1hoverNav{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>left:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:10;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1imageContainer&gt;#hoverNav{ left:0;}</p>
+<p class="p1">#vlb1prevLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:50%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin-top: -37px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 74px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width: 74px; <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:20;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>outline-style:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-indent:-9999px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-position: 0 0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p1">#vlb1nextLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:50%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin-top: -37px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 74px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width: 74px;<span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:20;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>outline-style:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-indent:-9999px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-position: 100% 0;</p>
+<p class="p1">}<span class="Apple-tab-span">	</span></p>
+<p class="p1">* html #vlb1prevLinkImg,* html #vlb1nextLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-image:url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1prevLinkImg { left: 3px; }</p>
+<p class="p1">#vlb1nextLinkImg { right: 3px; }</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">#vlb1imageContainerMain:hover #vlb1prevLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-image:url(arrows.png);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-position: 0 0;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1imageContainerMain:hover #vlb1nextLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-image:url(arrows.png);</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-position: 100% 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p1">* html #vlb1prevLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-image:url(arrows.png);</p>
+<p class="p1">}</p>
+<p class="p1">* html #vlb1nextLinkImg{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-image:url(arrows.png);</p>
+<p class="p1">}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1imageDataContainer{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width: auto;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:21;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>bottom: 20px;<span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>left: 5px;<span class="Apple-tab-span">	</span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1imageData{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-family: 'Fjalla One',Arial,sans-serif;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 30px;<span class="Apple-converted-space"> <span class="Apple-tab-span">	</span></span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>color: #FFFFFF;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin-right: 15px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow:visible;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:21;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-shadow: -4px 4px 0 #5B8990;<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p1">#vlb1imageDetails{ width:100%; padding: 0;}</p>
+<p class="p1">#vlb1caption{ display:block;text-align:left; padding: 12px;}</p>
+<p class="p1">#vlb1numberDisplay{ display:none;text-align:right;}</p>
+<p class="p1">#vlb1detailsNav{display:none;}</p>
+<p class="p1">#vlb1prevLinkDetails, #vlb1nextLinkDetails{display:none;}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1imageDataContainer{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>z-index:21;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>bottom: 20px; <span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 5px; <span class="Apple-converted-space">   </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1close{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>z-index:21;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1closeLink {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>top:-17px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>right:-17px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>outline-style:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>padding:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:44px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:44px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background:url(close.png) no-repeat;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-position: 0 0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>_background-image:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='index_files/vlb_files1/close.png', sizingMethod='scale');</p>
+<p class="p1">}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}</p>
+<p class="p1">* html&gt;body .clearfix {display:inline-block; width:100%;}</p>
+<p class="p2"><br></p>
+<p class="p1">* html .clearfix {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>/* Hides from IE-mac \*/</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:1%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>/* End hide from IE-mac */</p>
+<p class="p1">}<span class="Apple-tab-span">	</span></p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1outerImageFrame{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>border:5px solid red;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:absolute;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1outerImageContainer{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow:visible;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin-bottom: 5px;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:center;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>padding:0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1lightboxFrameBody{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color:transparent;</p>
+<p class="p1">}</p>
+<p class="p1">.vlb{display:none;}</p>
+<p class="p1">#vlb1outerImageContainer td, #vlb1outerImageContainer tr{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>border:0 none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1outerImageContainer td.tl, #vlb1outerImageContainer td.br{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height:5px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:5px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#vlb1outerImageContainer td.tl{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.tc{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.tr{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.ml{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.mr{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.bl{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.bc{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}</p>
+<p class="p1">#vlb1outerImageContainer td.br{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: #acb7bd;</p>
+<p class="p1">}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">#vlightbox1 {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:100%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>zoom:1;<span class="Apple-tab-span">	</span></p>
+<p class="p1">}</p>
+<p class="p1">#vlightbox1 .vlightbox1 {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:-moz-inline-stack;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:inline-block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>zoom:1;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>*display:inline;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>vertical-align:top;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:5px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:80px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-family:Trebuchet,Tahoma,Arial,sans-serif;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size:11px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-weight:normal;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:center;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>opacity:0.87;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>outline:none;</p>
+<p class="p1">}</p>
+<p class="p1">#vlightbox1 .vlightbox1 a{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0;</p>
+<p class="p1">}</p>
+<p class="p1">#vlightbox1 .vlightbox1:hover, #vlightbox1 .vlightbox1 a:hover{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>opacity:1;</p>
+<p class="p1">}</p>
+<p class="p1">#vlightbox1 .vlightbox1 img{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>display:block;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>border:none;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin:0;</p>
+<p class="p1">}</p>
+<p class="p1">#vlightbox1 .vlightbox1 div {display:none}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:inherit;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">::-webkit-scrollbar-thumb {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:#ffffff;} <span class="Apple-converted-space">    </span>/*change the color of the scrollbar */</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">::-webkit-scrollbar-track {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:transparent;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:#fff;<span class="Apple-converted-space">      </span>/*change the color of the main background */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-image: url('http://i.imgur.com/rkR5B6r.png');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-repeat: repeat;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-attachment: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-position: center;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: Trebuchet MS, sans-serif; <span class="Apple-converted-space">  </span>/*change the custom font */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:150%;}</p>
+<p class="p2"><br></p>
+<p class="p1">a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #ffffff; <span class="Apple-converted-space">  </span>/*change the color of the general links */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><br></p>
+<p class="p1">a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;} <span class="Apple-converted-space">  </span>/*change the color of the general links hover */</p>
+<p class="p2"><br></p>
+<p class="p1">#header {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left: -250px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom:50px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:500px;</p>
+<p class="p1">}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">#header img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width:500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:384px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#container {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color:#4accf5; <span class="Apple-converted-space">  </span>/*change the background color of the textblock */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#fff; <span class="Apple-converted-space">  </span>/*change the text color */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top:375px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left: -250px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom:50px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:0px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#maintitle {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#fff;<span class="Apple-converted-space">  </span>/*change the color of the main title text */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Yanone Kaffeesatz', sans-serif;}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float:right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform:lowercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:5px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#ffffff; <span class="Apple-converted-space">  </span>/*change the color of navigation at the top of the page */</p>
+<p class="p1"><span class="Apple-converted-space">     </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav a:hover{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;} <span class="Apple-converted-space">  </span>/*change the color of the navigation hover */</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">#title {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color:#fff; <span class="Apple-converted-space">  </span>/*change the color of section title background */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#11b7ea; <span class="Apple-converted-space">  </span>/*change the color of the section title text */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Yanone Kaffeesatz', sans-serif;}</p>
+<p class="p2"><br></p>
+<p class="p1">#box1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:10px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#box1 span {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float:right;}</p>
+<p class="p2"><br></p>
+<p class="p1">#box1 img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float:left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-height:80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width:80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom:10px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#dhtmltooltip{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#11b7ea;<span class="Apple-converted-space">      </span>/*change the color of the hover info text */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid #11b7ea; <span class="Apple-converted-space">  </span>/*change the color of the hover info border */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #fff;<span class="Apple-converted-space">  </span>/*change the color of the hover info background */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>visibility: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 5px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space"> </span>/*do not delete credit section */</p>
+<p class="p2"><br></p>
+<p class="p1">#credit {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>bottom:5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>right:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:1px;}</p>
+<p class="p2"><br></p>
+<p class="p1">{CustomCSS}&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="header"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- add the url of your header image here --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;img src="http://i.imgur.com/DQKLvE6.png"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- change the main title here here --&gt;</p>
+<p class="p1">&lt;div id="maintitle"&gt;Gifts</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- add more links here to the top section if needed --&gt;</p>
+<p class="p1">&lt;div id="nav"&gt;</p>
+<p class="p1">&lt;a href="/"&gt;home&lt;/a&gt;</p>
+<p class="p1">&lt;a href="/submit"&gt;submit&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://twitter.com/potepoteHQ"&gt;banner&lt;/a&gt;</p>
+<p class="p1">&lt;a href="http://octomoosey.tumblr.com/"&gt;theme&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- to add more boxes for content copy everything from here to the start of the next section title--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- change the section title here --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="title"&gt;to you&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- add your content within the 'box1' div.<span class="Apple-converted-space">  </span>if you want to get the 'split' effect with text on the left and the right of the box - put any right hand text inside 'span' tags as shown below --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="box1"&gt;</p>
+<p class="p1">Requests, contests, etc</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- change the section title here --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="title"&gt;to me&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;div id="box1"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="http://i.imgur.com/UXqX3xX.jpg" class="vlightbox1" onMouseover="ddrivetip('for Cats worth Crossing')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()" title="by hieis @ tumblr"&gt;&lt;img src="http://i.imgur.com/QNPEorh.jpg?1"&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="http://66.media.tumblr.com/95792761f50828b2af8e1478d728eeac/tumblr_nuhb1tN8mE1un0kpbo1_r18_1280.png" class="vlightbox1" onMouseover="ddrivetip('for my birthday')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()" title="by hatsuuaki @ tumblr"&gt;&lt;img src="http://i.imgur.com/Mz9nu99.png?1"&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="" class="vlightbox1" onMouseover="ddrivetip('desc')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()"&gt;&lt;img src=""&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="" class="vlightbox1" onMouseover="ddrivetip('desc')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()"&gt;&lt;img src=""&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="" class="vlightbox1" onMouseover="ddrivetip('desc')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()"&gt;&lt;img src=""&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="dhtmltooltip"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script type="text/javascript"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">/***********************************************</p>
+<p class="p1">* Cool DHTML tooltip script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)</p>
+<p class="p1">* Please keep this notice intact</p>
+<p class="p1">* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code</p>
+<p class="p1">***********************************************/</p>
+<p class="p2"><br></p>
+<p class="p1">var offsetxpoint=-50 //Customize x offset of tooltip</p>
+<p class="p1">var offsetypoint=20 //Customize y offset of tooltip</p>
+<p class="p1">var ie=document.all</p>
+<p class="p1">var ns6=document.getElementById &amp;&amp; !document.all</p>
+<p class="p1">var enabletip=false</p>
+<p class="p1">if (ie||ns6)</p>
+<p class="p1">var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""</p>
+<p class="p1">document.body.appendChild(tipobj)</p>
+<p class="p2"><br></p>
+<p class="p1">function ietruebody(){</p>
+<p class="p1">return (document.compatMode &amp;&amp; document.compatMode!="BackCompat")? document.documentElement : document.body</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function ddrivetip(thetext, thecolor, thewidth){</p>
+<p class="p1">if (ns6||ie){</p>
+<p class="p1">if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"</p>
+<p class="p1">if (typeof thecolor!="undefined" &amp;&amp; thecolor!="") tipobj.style.backgroundColor=thecolor</p>
+<p class="p1">tipobj.innerHTML=thetext</p>
+<p class="p1">enabletip=true</p>
+<p class="p1">return false</p>
+<p class="p1">}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function positiontip(e){</p>
+<p class="p1">if (enabletip){</p>
+<p class="p1">var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;</p>
+<p class="p1">var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;</p>
+<p class="p1">var rightedge=ie&amp;&amp;!window.opera? ietruebody().clientWidth-event.clientX-offsetxpoint : window.innerWidth-e.clientX-offsetxpoint-20</p>
+<p class="p1">var bottomedge=ie&amp;&amp;!window.opera? ietruebody().clientHeight-event.clientY-offsetypoint : window.innerHeight-e.clientY-offsetypoint-20</p>
+<p class="p2"><br></p>
+<p class="p1">var leftedge=(offsetxpoint&lt;0)? offsetxpoint*(-1) : -1000</p>
+<p class="p2"><br></p>
+<p class="p1">if (rightedge&lt;tipobj.offsetWidth)</p>
+<p class="p1">tipobj.style.left=ie? ietruebody().scrollLeft+event.clientX-tipobj.offsetWidth+"px" : window.pageXOffset+e.clientX-tipobj.offsetWidth+"px"</p>
+<p class="p1">else if (curX&lt;leftedge)</p>
+<p class="p1">tipobj.style.left="5px"</p>
+<p class="p1">else</p>
+<p class="p1">tipobj.style.left=curX+offsetxpoint+"px"</p>
+<p class="p1">if (bottomedge&lt;tipobj.offsetHeight)</p>
+<p class="p1">tipobj.style.top=ie? ietruebody().scrollTop+event.clientY-tipobj.offsetHeight-offsetypoint+"px" : window.pageYOffset+e.clientY-tipobj.offsetHeight-offsetypoint+"px"</p>
+<p class="p1">else</p>
+<p class="p1">tipobj.style.top=curY+offsetypoint+"px"</p>
+<p class="p1">tipobj.style.visibility="visible"</p>
+<p class="p1">}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function hideddrivetip(){</p>
+<p class="p1">if (ns6||ie){</p>
+<p class="p1">enabletip=false</p>
+<p class="p1">tipobj.style.visibility="hidden"</p>
+<p class="p1">tipobj.style.left="-1000px"</p>
+<p class="p1">tipobj.style.backgroundColor=''</p>
+<p class="p1">tipobj.style.width=''</p>
+<p class="p1">}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">document.onmousemove=positiontip</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="credit"&gt;&lt;a href="http://octomoosey.tumblr.com/"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>onMouseover="ddrivetip('theme by octomoosey')";</p>
+<p class="p1"><span class="Apple-converted-space"> </span>onMouseout="hideddrivetip()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>&lt;img src="https://31.media.tumblr.com/ce8b580be9fa9afaa442fdb216c9b293/tumblr_inline_nj1tziQKpe1ronkfd.png"&gt;&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="http://static.tumblr.com/zsy3qon/EN2o82ylu/vlbdata1.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

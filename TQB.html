@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!--</p>
+<p class="p1"><span class="Apple-converted-space"> </span>chiaki</p>
+<p class="p1"><span class="Apple-converted-space"> </span>page made by gyapo.tumblr.com</p>
+<p class="p1"><span class="Apple-converted-space"> </span>don't remove this comment</p>
+<p class="p1"><span class="Apple-converted-space"> </span>--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;title&gt;{Title}&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="shortcut icon" href="{Favicon}"&gt;</p>
+<p class="p1">&lt;link rel="alternate" type="application/rss+xml" href="{RSS}"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script type="text/javascript"&gt;</p>
+<p class="p1">$(function() {</p>
+<p class="p1">// scroll handler</p>
+<p class="p1">var scrollToAnchor = function( id ) {</p>
+<p class="p1">// grab the element to scroll to based on the name</p>
+<p class="p1">var elem = $("a[name='"+ id +"']");</p>
+<p class="p1">// if that didn't work, look for an element with our ID</p>
+<p class="p1">if ( typeof( elem.offset() ) === "undefined" ) {</p>
+<p class="p1">elem = $("#"+id);</p>
+<p class="p1">}</p>
+<p class="p1">// if the destination element exists</p>
+<p class="p1">if ( typeof( elem.offset() ) !== "undefined" ) {</p>
+<p class="p1">// do the scroll</p>
+<p class="p1">$scrollOffset = elem.offset().top - 100;</p>
+<p class="p1">$('html, body').animate({</p>
+<p class="p1"><span class="Apple-converted-space">      </span>scrollTop: $scrollOffset</p>
+<p class="p1">}, 500 );</p>
+<p class="p1">}</p>
+<p class="p1">};</p>
+<p class="p1">// bind to click event</p>
+<p class="p1">$("a").click(function( event ) {</p>
+<p class="p1">// only do this if it's an anchor link</p>
+<p class="p1">if ( $(this).attr("href").match("#") ) {</p>
+<p class="p1">// cancel default event propagation</p>
+<p class="p1">event.preventDefault();</p>
+<p class="p1">// scroll to the location</p>
+<p class="p1">var href = $(this).attr('href').replace('#', '')</p>
+<p class="p1">scrollToAnchor( href );</p>
+<p class="p1">}</p>
+<p class="p1">});</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=1184fc0646e1012cc58ce84eac6ad456" type="text/javascript"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style type="text/css"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar-thumb {</p>
+<p class="p1">background-color: #FFC2E0;</p>
+<p class="p1">height:auto;</p>
+<p class="p1">border-bottom:none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar {</p>
+<p class="p1">width:5px;</p>
+<p class="p1">background-color: #FFC2E0;</p>
+<p class="p1">border: 2px solid #FFFFFF;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body {</p>
+<p class="p1">font-family:baskerville;</p>
+<p class="p1">font-size:11px;</p>
+<p class="p1">background-color:#FFF;</p>
+<p class="p1">background-image:url('https://i.imgur.com/nqu13Zj.png');</p>
+<p class="p1">background-position: bottom right;</p>
+<p class="p1">background-attachment:fixed;</p>
+<p class="p1">background-repeat:no-repeat;</p>
+<p class="p1">background-size: 35%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">a</p>
+<p class="p1">{text-decoration:none;</p>
+<p class="p1">color:#000;}</p>
+<p class="p1">.bar a:hover</p>
+<p class="p1">{text-decoration:underline;}</p>
+<p class="p2"><br></p>
+<p class="p1">img</p>
+<p class="p1">{margin-bottom:-2px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#all</p>
+<p class="p1">{margin:0 auto;</p>
+<p class="p2"><br></p>
+<p class="p1">width:300px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bar</p>
+<p class="p1">{background-color:#FFF;</p>
+<p class="p1">width:299px;</p>
+<p class="p1">letter-spacing:1px;</p>
+<p class="p1">font-family:baskerville;</p>
+<p class="p1">padding:5px 10px 5px 11px;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">position:fixed;</p>
+<p class="p2"><br></p>
+<p class="p1">box-shadow:0px 0px 4px #CCC;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#haut {top:0px;</p>
+<p class="p1">border-radius:0px 0px 10px 10px;z-index:999;}</p>
+<p class="p1">#bas {bottom:0px;</p>
+<p class="p1">border-radius:10px 10px 0px 0px;font-style:italic;}</p>
+<p class="p2"><br></p>
+<p class="p1">#bara img</p>
+<p class="p1">{width:145px;margin-top:-120px;margin-left:-43px;z-index:00;position:fixed;}</p>
+<p class="p1">#barak img</p>
+<p class="p1">{width:145px;margin-top:-120px;margin-left:218px;position:fixed;}</p>
+<p class="p1">#barana img</p>
+<p class="p1">{width:95px;margin-top:-85px;margin-left:152px;position:fixed;z-index:500;}</p>
+<p class="p1">#baran img</p>
+<p class="p1">{width:95px;margin-top:-85px;margin-left:73px;position:fixed;z-index:200;}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">#icon</p>
+<p class="p1">{border-radius:58px;overflow:hidden;width:70px;</p>
+<p class="p1">margin-top:-70px;z-index:799;position:fixed;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>padding:8px 8px 13px 8px;background-color:#FFF;</p>
+<p class="p1">margin-left:118px;box-shadow:0px 0px 4px #CCC;</p>
+<p class="p1">}</p>
+<p class="p1">#icon img{border-radius:58px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#content</p>
+<p class="p1">{height:100%;width:300px;margin-left:10px;box-shadow:0px 0px 6px #CCC;</p>
+<p class="p1">background-color:#FFF;position:fixed;z-index:-999;margin-top:-80px;}</p>
+<p class="p1">#posts</p>
+<p class="p1">{width:280px;margin-left:10px;margin-top:80px;padding:10px;text-align:justify;color:#444;}</p>
+<p class="p2"><br></p>
+<p class="p1">.persol</p>
+<p class="p1">{float:right;width:85px;padding:3px;border:1px solid #EEE;margin-left:5px;}</p>
+<p class="p1">.persol img</p>
+<p class="p1">{width:85px;}</p>
+<p class="p1">.perso</p>
+<p class="p1">{float:left;width:85px;padding:3px;border:1px solid #EEE;margin-right:5px;}</p>
+<p class="p1">.perso img</p>
+<p class="p1">{width:85px;}</p>
+<p class="p1">.infol</p>
+<p class="p1">{border-bottom:1px solid #FFC2E0;padding:0px 0px 0px 12px;font-size:11px;text-align:right;float:right;height:14px;}</p>
+<p class="p1">.info</p>
+<p class="p1">{border-bottom:1px solid #FFC2E0;padding:0px 12px 0px 0px;font-size:11px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.post</p>
+<p class="p1">{margin-bottom:15px;margin-top:2px;min-height:75px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.textr p {float:right;margin-top:3px;margin-bottom:10px;padding:0;text-indent:15px;}</p>
+<p class="p1">.textl p {float:left;margin-top:3px;margin-bottom:10px;padding:0;text-indent:15px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.textr,.textl a</p>
+<p class="p1">{border-bottom:dotted 1px; color:#FFC2E0;}</p>
+<p class="p1">.textr,.textl b</p>
+<p class="p1">{color:#FFC2E0;}</p>
+<p class="p1">.textr,.textl i</p>
+<p class="p1">{opacity:0.5;color:#000;}</p>
+<p class="p2"><br></p>
+<p class="p1">#updates { position: fixed; top: 20px; left: 20px; width: 50px; }</p>
+<p class="p2"><br></p>
+<p class="p1">.upd { margin-bottom: 10px; border: 3px double #FFC2E0; width: 50px; height: 50px; overflow: hidden; background: #FFF; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; }</p>
+<p class="p2"><br></p>
+<p class="p1">.upd:hover { width: 200px; height: 100px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }</p>
+<p class="p2"><br></p>
+<p class="p1">.pin { position: absolute; margin: 4px; width: 42px; height: 42px; overflow: hidden; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; }</p>
+<p class="p2"><br></p>
+<p class="p1">.pin img { margin: 0px; width: 42px; height: 42px; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; }</p>
+<p class="p1">.upd:hover .pin, .upd:hover .pin img { width: 15px; height: 15px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }</p>
+<p class="p2"><br></p>
+<p class="p1">.updtitle { margin-left: 50px; margin-top: 3px; border-bottom: 3px double #FFC2E0; width: 72px; height: 19px; line-height: 19px; padding-left: 17px; overflow: hidden; color: #c3c3c3; text-transform: uppercase; font-family: Courier New; font-size: 9px; letter-spacing: 1px; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; }</p>
+<p class="p2"><br></p>
+<p class="p1">.upd:hover .updtitle { margin-left: 5px; }</p>
+<p class="p2"><br></p>
+<p class="p1">.updtext { margin-left: 50px; margin-top: 0px; width: 85px; height: 70px; padding: 0px 5px 0px 5px; overflow: auto; color: #c3c3c3; font-family: Calibri; font-size: 9px; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; }</p>
+<p class="p2"><br></p>
+<p class="p1">.upd:hover .updtext { margin-left: 0px; }</p>
+<p class="p2"><br></p>
+<p class="p1">.updtext::-webkit-scrollbar-thumb:vertical {background: #e7e7e7; height: auto; } .updtext::-webkit-scrollbar-thumb:horizontal { background: #e7e7e7 height: auto;} .updtext::-webkit-scrollbar { height: 2px; width: 2px; background: #FFF; }</p>
+<p class="p2"><br></p>
+<p class="p1">h1{letter-spacing:5px;text-align:center;font-weight:normal;margin-bottom:10px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.timel {</p>
+<p class="p1">font-size:12px;</p>
+<p class="p1">float:left;</p>
+<p class="p1">border-bottom: thin solid #FFC2E0;</p>
+<p class="p1">padding:0px 0px 0px 0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.timer {</p>
+<p class="p1">font-size:12px;</p>
+<p class="p1">float:right;</p>
+<p class="p1">border-bottom: thin solid #FFC2E0;</p>
+<p class="p1">padding:0px 0px 0px 0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#time {</p>
+<p class="p1">height:500px;</p>
+<p class="p1">overflow-x: hidden;</p>
+<p class="p1">overflow-y: auto;</p>
+<p class="p1">margin-bottom:15px;</p>
+<p class="p1">padding-right:3px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="updates"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="upd"&gt;</p>
+<p class="p1">&lt;div class="pin"&gt;&lt;img src="https://31.media.tumblr.com/58e59242b98cc19bf16aca3e96ea72d8/tumblr_ngkqx1EGKi1ss5n20o2_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtitle"&gt;about&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtext"&gt;</p>
+<p class="p1">Your text goes here!</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="upd"&gt;</p>
+<p class="p1">&lt;div class="pin"&gt;&lt;img src="https://33.media.tumblr.com/f027b1ac50bc5cbceacaaabf4337be4a/tumblr_ngkqx1EGKi1ss5n20o3_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtitle"&gt;currently&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtext"&gt;</p>
+<p class="p1">Your text goes here!</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="upd"&gt;</p>
+<p class="p1">&lt;div class="pin"&gt;&lt;img src="https://38.media.tumblr.com/60e6359e1c65b771296e94f4452a1727/tumblr_ngkqx1EGKi1ss5n20o4_r1_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtitle"&gt;more&lt;/div&gt;</p>
+<p class="p1">&lt;div class="updtext"&gt;</p>
+<p class="p1">Your text goes here!</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="all"&gt;</p>
+<p class="p1">&lt;div id="content"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!--bottom bar start--&gt;</p>
+<p class="p1">&lt;div class="bar "id="bas"&gt;</p>
+<p class="p1">your text here</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!--bottom bar ends--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--Your icon start--&gt;</p>
+<p class="p1">&lt;div id="icon"&gt;</p>
+<p class="p1">&lt;img width="70px" src="https://i.imgur.com/22pWjI3.png"/&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!--Your icon ends--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--flowers start--&gt;</p>
+<p class="p1">&lt;div id="bara"&gt;&lt;img src=""&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div id="barak"&gt;&lt;img src=""&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div id="barana"&gt;&lt;img src=""&gt;&lt;/div&gt;&lt;div id="baran"&gt;&lt;img src=""&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;!--flowers end--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a name="top"&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="posts"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start left post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;a name="story"&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;h1&gt;Story&lt;/h1&gt;</p>
+<p class="p1">&lt;center&gt;</p>
+<p class="p1">The ultimate thirst</p>
+<p class="p1">&lt;/center&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--left post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a name="chara"&gt;&lt;/a&gt;&lt;h1&gt;Characters&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start right post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="persol"&gt;&lt;img src="https://i.imgur.com/A0vfCjD.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="infol"&gt; .position&lt;i&gt;&lt;u&gt;.name&lt;/u&gt;&lt;/i&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">&lt;div class="textl" style="margin-top:-21px;"&gt;</p>
+<p class="p1">some text&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--right post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start left post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="perso"&gt;&lt;img src="https://31.media.tumblr.com/d61312772892940ac06088133c108570/tumblr_nfrob3yDU01qdm57ho3_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="info"&gt;&lt;i&gt;&lt;u&gt;name.&lt;/u&gt;&lt;/i&gt; Position.&lt;/span&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--left post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start right post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="persol"&gt;&lt;img src="https://38.media.tumblr.com/ca6107defb6812f042f291fc37eca864/tumblr_nfrob3yDU01qdm57ho1_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="infol"&gt; .position&lt;i&gt;&lt;u&gt;.name&lt;/u&gt;&lt;/i&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">&lt;div class="textl" style="margin-top:-21px;"&gt;</p>
+<p class="p1">some text&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--right post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start left post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="perso"&gt;&lt;img src="https://31.media.tumblr.com/d61312772892940ac06088133c108570/tumblr_nfrob3yDU01qdm57ho3_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="info"&gt;&lt;i&gt;&lt;u&gt;name.&lt;/u&gt;&lt;/i&gt; Position.&lt;/span&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--left post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start right post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="persol"&gt;&lt;img src="https://38.media.tumblr.com/ca6107defb6812f042f291fc37eca864/tumblr_nfrob3yDU01qdm57ho1_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="infol"&gt; .position&lt;i&gt;&lt;u&gt;.name&lt;/u&gt;&lt;/i&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">&lt;div class="textl" style="margin-top:-21px;"&gt;</p>
+<p class="p1">some text&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--right post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start left post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="perso"&gt;&lt;img src="https://31.media.tumblr.com/d61312772892940ac06088133c108570/tumblr_nfrob3yDU01qdm57ho3_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="info"&gt;&lt;i&gt;&lt;u&gt;name.&lt;/u&gt;&lt;/i&gt; Position.&lt;/span&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--left post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start right post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="persol"&gt;&lt;img src="https://38.media.tumblr.com/ca6107defb6812f042f291fc37eca864/tumblr_nfrob3yDU01qdm57ho1_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="infol"&gt; .position&lt;i&gt;&lt;u&gt;.name&lt;/u&gt;&lt;/i&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">&lt;div class="textl" style="margin-top:-21px;"&gt;</p>
+<p class="p1">some text&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--right post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start left post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="perso"&gt;&lt;img src="https://31.media.tumblr.com/d61312772892940ac06088133c108570/tumblr_nfrob3yDU01qdm57ho3_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="info"&gt;&lt;i&gt;&lt;u&gt;name.&lt;/u&gt;&lt;/i&gt; Position.&lt;/span&gt;&lt;br&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--left post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--start right post--&gt;</p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;div class="persol"&gt;&lt;img src="https://38.media.tumblr.com/ca6107defb6812f042f291fc37eca864/tumblr_nfrob3yDU01qdm57ho1_100.png"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;span class="infol"&gt; .position&lt;i&gt;&lt;u&gt;.name&lt;/u&gt;&lt;/i&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">&lt;div class="textl" style="margin-top:-21px;"&gt;</p>
+<p class="p1">some text&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!--right post--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a name="timeline"&gt;&lt;/a&gt;&lt;h1&gt;Timeline&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="time"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;May&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;June&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;July&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;August&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;September&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;October&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;November&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;December&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;January&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;February&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timer"&gt;March&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textr"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="post"&gt;</p>
+<p class="p1">&lt;span class="timel"&gt;April&lt;/span&gt;</p>
+<p class="p1">&lt;span class="textl"&gt;</p>
+<p class="p1">&lt;p&gt;some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;&lt;!--posts--&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!--top bar start--&gt;</p>
+<p class="p1">&lt;div class="bar "id="haut"&gt;</p>
+<p class="p1">&lt;a href="#top"&gt;&amp;#x25B2;&lt;/a&gt; . &lt;a href="#story"&gt;story&lt;/a&gt; &lt;a href="#chara"&gt;characters&lt;/a&gt;<span class="Apple-converted-space">  </span>&lt;a href="#timeline"&gt;timeline&lt;/a&gt; . &lt;a title="Chiaki page" href="http://gyapo.tumblr.com/"&gt;credits&lt;/a&gt; . &lt;a href="#bottom"&gt;&amp;#x25BC;&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>&lt;!--top bar ends--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a name="bottom"&gt;&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

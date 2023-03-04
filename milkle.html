@@ -1,0 +1,1020 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;link rel="icon" type="image/png" href="http://i.imgur.com/3S1Mxr8.png" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">$(document).ready(function(){</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space"> </span>$('ul.tabs li').click(function(){</p>
+<p class="p1">var tab_id = $(this).attr('data-tab');</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">$('ul.tabs li').removeClass('current');</p>
+<p class="p1">$('.tab-content').removeClass('current');</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">$(this).addClass('current');</p>
+<p class="p1">$("#"+tab_id).addClass('current');</p>
+<p class="p1"><span class="Apple-converted-space"> </span>})</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">})&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Start of StatCounter Code for Tumblr --&gt;</p>
+<p class="p1">&lt;script type="text/javascript"&gt;</p>
+<p class="p1">var sc_project=9980528;<span class="Apple-converted-space"> </span></p>
+<p class="p1">var sc_invisible=1;<span class="Apple-converted-space"> </span></p>
+<p class="p1">var sc_security="d4015674";<span class="Apple-converted-space"> </span></p>
+<p class="p1">var scJsHost = (("https:" == document.location.protocol) ?</p>
+<p class="p1">"https://secure." : "http://www.");</p>
+<p class="p1">document.write("&lt;sc"+"ript type='text/javascript' src='" +</p>
+<p class="p1">scJsHost+</p>
+<p class="p1">"statcounter.com/counter/counter.js'&gt;&lt;/"+"script&gt;");</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;noscript&gt;&lt;div class="statcounter"&gt;&lt;a title="tumblr stats"</p>
+<p class="p1">href="http://statcounter.com/tumblr/" target="_blank"&gt;&lt;img</p>
+<p class="p1">class="statcounter"</p>
+<p class="p1">src="http://c.statcounter.com/9980528/0/d4015674/1/"</p>
+<p class="p1">alt="tumblr stats"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/noscript&gt;</p>
+<p class="p1">&lt;!-- End of StatCounter Code for Tumblr --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">(function($){</p>
+<p class="p1"><span class="Apple-converted-space"> </span>$(document).ready(function(){</p>
+<p class="p1">$("[title]").style_my_tooltips({</p>
+<p class="p1"><span class="Apple-converted-space"> </span>tip_follows_cursor:true,</p>
+<p class="p1"><span class="Apple-converted-space"> </span>tip_delay_time:10,</p>
+<p class="p1"><span class="Apple-converted-space"> </span>tip_fade_speed:100</p>
+<p class="p1">}</p>
+<p class="p1"><span class="Apple-converted-space"> </span>);</p>
+<p class="p1"><span class="Apple-converted-space"> </span>});</p>
+<p class="p1">})(jQuery);</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;title&gt;miru + kuru&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style type="text/css"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">#s-m-t-tooltip{</p>
+<p class="p1">max-width:300px;</p>
+<p class="p1">margin-left:40px;</p>
+<p class="p1">border:2px dashed white;</p>
+<p class="p1">box-shadow: 0px 0px 0px 2px #ffe6b3;</p>
+<p class="p1">font-family: 'pen', sans-serif;</p>
+<p class="p1">padding:5px 5px;</p>
+<p class="p1">background:#ffe6b3; /*if you're changing the color in the code, make sure this is the same as the s-m-t:after */</p>
+<p class="p1">color:#999;</p>
+<p class="p1">z-index:999999;</p>
+<p class="p1">font-size:13px;</p>
+<p class="p1">text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* don't touch this, this is the what makes it look like a speech bubble */</p>
+<p class="p1">#s-m-t-tooltip:after{position: absolute;</p>
+<p class="p1">content: "";</p>
+<p class="p1">width: 0; height: 0;</p>
+<p class="p1">border-top: 14px solid #ffe6b3; /*must be same color as tooltip! */<span class="Apple-converted-space"> </span></p>
+<p class="p1">border-left: 14px solid transparent;<span class="Apple-converted-space"> </span></p>
+<p class="p1">border-width: 14px 14px 0px;</p>
+<p class="p1">height:0;</p>
+<p class="p1">width:0;</p>
+<p class="p1">z-index:-999;</p>
+<p class="p1">position:absolute;</p>
+<p class="p1">left:-15px;</p>
+<p class="p1">top:2px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#s-m-t-tooltip:before{position: absolute;</p>
+<p class="p1">content: "";<span class="Apple-converted-space"> </span></p>
+<p class="p1">z-index:-2;</p>
+<p class="p1">width: 0; height: 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1">border-top: 100px solid white;</p>
+<p class="p1">border-left: 100px solid transparent;<span class="Apple-converted-space"> </span></p>
+<p class="p1">border-width: 15px 15px 0px;</p>
+<p class="p1">height:0;</p>
+<p class="p1">width:0;</p>
+<p class="p1">z-index:-999;</p>
+<p class="p1">position:absolute;</p>
+<p class="p1">left:-15px;</p>
+<p class="p1">top:2px;}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar {width: 10px; height: 4px; background: #ffffff; border-left:2px dashed #ffe6b3; }</p>
+<p class="p1">::-webkit-scrollbar-thumb { background-color: #ffe6b3; }</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">::selection {color: #fff; background: #ffe6b3;}</p>
+<p class="p1">::-moz-selection {</p>
+<p class="p1">background: #ffe6b3; /* Gecko Browsers */color:#fff;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space"> </span>@font-face { font-family: "pen"; src: url('https://dl.dropboxusercontent.com/s/t0ac9xq774glqpl/penoftruth.ttf?'); }</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">body {color:#999; background:#ffe6b3 url(http://assets.tumblr.com/images/x.gif?v=1);font-family:arial; font-size:13px; line-height:17px;word-wrap:break-word; overflow-x:hidden;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">a:link, a:active, a:visited{color: #c0bdb8; text-decoration:none}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">a:hover {</p>
+<p class="p1">color:#fdfdfd;-webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">small{font-size:auto}</p>
+<p class="p2"><br></p>
+<p class="p1">big{font-size:auto}</p>
+<p class="p2"><br></p>
+<p class="p1">b, strong{color:#999}</p>
+<p class="p2"><br></p>
+<p class="p1">h1 {</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">font-size:23px;</p>
+<p class="p1">font-family: 'pen', sans-serif;</p>
+<p class="p1">letter-spacing:1px;</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">background-color:#FFF;</p>
+<p class="p1">padding:10px;</p>
+<p class="p1">margin-top:0px;</p>
+<p class="p1">letter-spacing:7px;</p>
+<p class="p1">border: 2px dashed #ffe6b3;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">h2 {</p>
+<p class="p1">width: 100%;<span class="Apple-converted-space"> </span></p>
+<p class="p1">font-size:19px;</p>
+<p class="p1">font-family: 'Waiting for the Sunrise', cursive;</p>
+<p class="p1">text-align: center;</p>
+<p class="p1">border-bottom: 2px dashed #ffe6b3;<span class="Apple-converted-space"> </span></p>
+<p class="p1">line-height: 0.1em;</p>
+<p class="p1">margin: 27px 0px 20px 0px;<span class="Apple-converted-space"> </span></p>
+<p class="p1">letter-spacing: 5px;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">h2 span {<span class="Apple-converted-space"> </span></p>
+<p class="p1">background:#fff;<span class="Apple-converted-space"> </span></p>
+<p class="p1">padding:0px 10px 5px 5px;<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">i, em {color:#bbb}</p>
+<p class="p2"><br></p>
+<p class="p1">p{margin-top:6px; margin-bottom:6px}</p>
+<p class="p2"><br></p>
+<p class="p1">ul{list-style-image: url('http://sorahana.ciao.jp/material/onepoint/maru-y.gif');}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">img a{border:none; width:100%;}</p>
+<p class="p1">ul.tabs{ font-size:18px;</p>
+<p class="p1">margin: 0px;</p>
+<p class="p1">padding: 0px;position:relative;</p>
+<p class="p1">list-style: none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">ul.tabs li{</p>
+<p class="p1">background: none;</p>
+<p class="p1">padding:10px;</p>
+<p class="p1">display: inline-block;</p>
+<p class="p1">margin-left:20px;</p>
+<p class="p1">cursor: pointer;</p>
+<p class="p1">z-index: 99;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tabs:after {</p>
+<p class="p1">display:block;</p>
+<p class="p1">clear:both;</p>
+<p class="p1">content:'';</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">ul.tabs li.current{</p>
+<p class="p1">color: #777;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tab-content{</p>
+<p class="p1">display: none;</p>
+<p class="p1">background: transparent;</p>
+<p class="p1">padding: 15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tab-content.current{</p>
+<p class="p1">display: inherit;<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#container {border:2px dashed #ffe6b3;background-color:white; width: 570px; margin: 0 auto -10px auto; max-height:65%;height:65%;padding:30px; overflow:auto; margin-top:0px; padding-top:0px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#entries { text-align: justify; margin-left:-8px; margin-top:0px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.posts {margin:30px 0 0px 0; width: 550px; background-color:#fff;}</p>
+<p class="p1">.posts iframe{max-width:100%; padding:0px;opacity:.8; transition:.4s;}</p>
+<p class="p1">.posts img {max-width:100%;opacity:.8;:transition:.4s;}</p>
+<p class="p1">.posts img:hover {opacity:1; transition:.4s;}</p>
+<p class="p1">.posts iframe:hover{opacity:1; transition:.4s;}</p>
+<p class="p2"><br></p>
+<p class="p1">#title {</p>
+<p class="p1">margin-top:0px; margin: auto; margin-top:50px; width:410px; padding:2px 20px 15px 20px;position:relative; height:60px; background-color:white; font-size:30px; font-family:pen; color:#bfbfbf; text-align:justify;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#title img {margin: 0px 0px -10px 0px;z-index: -1;}</p>
+<p class="p2"><br></p>
+<p class="p1">.top {</p>
+<p class="p1">position: relative;</p>
+<p class="p1">width: 430px;</p>
+<p class="p1">height: 70px;</p>
+<p class="p1">overflow:visible;</p>
+<p class="p1">padding: 0px;</p>
+<p class="p1">margin:0px auto;</p>
+<p class="p1">background: #FFFFFF;</p>
+<p class="p1">border-top: #fff solid 10px;</p>
+<p class="p1">border-bottom: #fff solid 12px;</p>
+<p class="p1">border-right: #fff solid 12px;</p>
+<p class="p1">border-left: #fff solid 12px;</p>
+<p class="p1">border-top:none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.top:after</p>
+<p class="p1">{</p>
+<p class="p1">content: '';</p>
+<p class="p1">position: absolute;</p>
+<p class="p2"><br></p>
+<p class="p1">display: block;</p>
+<p class="p1">width: 0;</p>
+<p class="p1">z-index: -1;</p>
+<p class="p1">left: -100px;</p>
+<p class="p2"><br></p>
+<p class="p1">width: 0; height: 0; border-bottom: 82px solid white; border-left: 90px solid transparent;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.top:before</p>
+<p class="p1">{</p>
+<p class="p1">content: '';</p>
+<p class="p1">position: absolute;</p>
+<p class="p2"><br></p>
+<p class="p1">display: block;</p>
+<p class="p1">width: 0;<span class="Apple-tab-span">	</span>width: 0; height: 0; border-bottom: 82px solid white; border-right: 90px solid transparent;</p>
+<p class="p2"><br></p>
+<p class="p1">right: -100px;</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#description{position:absolute;}</p>
+<p class="p2"><br></p>
+<p class="p1">.current_page{background-color:#ffe6b3; width:20px; padding:6px;}</p>
+<p class="p1">.jump_page{background-color:#ffe6b3; opacity:.6; transition:.5s; -webkit-transition:.5s; -moz-transition:.5s; padding:6px;}</p>
+<p class="p1">.jump_page:hover{opacity:.8;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">#info{width:auto; font-size:12px; font-family:pen; text-transform:uppercase; border-top:2px solid #fff; text-align:center; position:relative; background:#ffe6b3;}</p>
+<p class="p2"><br></p>
+<p class="p1">img.rt {</p>
+<p class="p1">z-index:100;</p>
+<p class="p1">display:block;</p>
+<p class="p1">position:fixed;</p>
+<p class="p1">bottom:0px;</p>
+<p class="p1">max-height: 55%;</p>
+<p class="p1">height:55%;</p>
+<p class="p1">right:0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@-webkit-keyframes thumb {</p>
+<p class="p1">0% { -webkit-transform: rotate(0deg); }</p>
+<p class="p1">10% { -webkit-transform: rotate(-3deg); }</p>
+<p class="p1">20% { -webkit-transform: rotate(-6deg); }</p>
+<p class="p1">30% { -webkit-transform: rotate(-9deg); }</p>
+<p class="p1">40% { -webkit-transform: rotate(-12deg); }</p>
+<p class="p1">50% { -webkit-transform: rotate(-15deg); }</p>
+<p class="p1">60% { -webkit-transform: rotate(-12deg); }</p>
+<p class="p1">70% { -webkit-transform: rotate(-9deg); }</p>
+<p class="p1">80% { -webkit-transform: rotate(-6deg); }</p>
+<p class="p1">90% { -webkit-transform: rotate(-3deg); }</p>
+<p class="p1">100% { -webkit-transform: rotate(0deg); }</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">img.rt:hover{</p>
+<p class="p1">-webkit-animation-name: thumb;</p>
+<p class="p1">-webkit-animation-duration: 300ms;</p>
+<p class="p1">-webkit-transform-origin:50% 50% 50% 50%;</p>
+<p class="p1">-webkit-animation-iteration-count: infinite;</p>
+<p class="p1">-webkit-animation-timing-function: linear;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media {</p>
+<p class="p1">top:0px;</p>
+<p class="p1">left:0px;</p>
+<p class="p1">position:relative;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media b {</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">text-decoration:underline;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media a {</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media a:hover {</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">font-style:italic;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">-webkit-transition: all 0.3s ease;</p>
+<p class="p1">-moz-transition: all 0.3s ease;</p>
+<p class="p1">-o-transition: all 0.3s ease;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media p {</p>
+<p class="p1">top:-1px;</p>
+<p class="p1">left:7px;</p>
+<p class="p1">padding:5px;</p>
+<p class="p1">position:relative;</p>
+<p class="p1">border: 2px #ffe6b3 dashed;</p>
+<p class="p1">width:304px;</p>
+<p class="p1">height:232px;</p>
+<p class="p1">overflow-x:hidden;</p>
+<p class="p1">overflow-y:auto;</p>
+<p class="p1">color:#999;</p>
+<p class="p1">font-size:12px;</p>
+<p class="p1">text-align:justify;</p>
+<p class="p1">margin-bottom:25px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#media iframe {</p>
+<p class="p1">border: 2px #ffe6b3 dashed;</p>
+<p class="p1">float: left;</p>
+<p class="p1">clear: left;</p>
+<p class="p1">margin-left:0px;</p>
+<p class="p1">padding-left:0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#lyrimg {</p>
+<p class="p1">width:212px;</p>
+<p class="p1">height:100px;</p>
+<p class="p1">display:inline-block;</p>
+<p class="p1">position:absolute;</p>
+<p class="p1">margin-top:35px;</p>
+<p class="p1">margin-left:0px;</p>
+<p class="p1">margin-right:0px;</p>
+<p class="p1">padding:0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#lyrimg img {</p>
+<p class="p1">border: 2px #ffe6b3 dashed;</p>
+<p class="p1">height:100px;</p>
+<p class="p1">margin-left:0px;</p>
+<p class="p1">margin-right:0px;</p>
+<p class="p1">padding:0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bios {</p>
+<p class="p1">width:550px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floatleft img {</p>
+<p class="p1">border: 2px #ffe6b3 dashed;</p>
+<p class="p1">margin-bottom:3px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floatright img {</p>
+<p class="p1">border: 2px #ffe6b3 dashed;</p>
+<p class="p1">margin-bottom:3px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floatleft {</p>
+<p class="p1">width: 100px;</p>
+<p class="p1">height: 205px;</p>
+<p class="p1">float: left;</p>
+<p class="p1">margin-right:5px;</p>
+<p class="p1">padding-right:3px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floatright {</p>
+<p class="p1">width: 100px;</p>
+<p class="p1">height: 205px;</p>
+<p class="p1">float: right;</p>
+<p class="p1">margin-left:5px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floatcenter {</p>
+<p class="p1">height:196px;</p>
+<p class="p1">overflow-y:auto;</p>
+<p class="p1">overflow-x:hidden;</p>
+<p class="p1">margin: 0px 0px 7px 0px;</p>
+<p class="p1">padding:5px;</p>
+<p class="p1">border: 2px dashed #ffe6b3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tags {text-align:left;overflow:auto;margin-bottom:10px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.tags p {</p>
+<p class="p1">text-indent:25px;</p>
+<p class="p1">margin-top:0px;</p>
+<p class="p1">margin-bottom:0px;</p>
+<p class="p1">line-height:200%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tags u {</p>
+<p class="p1">font-family: 'pen', sans-serif;</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">font-size:17px;</p>
+<p class="p1">letter-spacing:1px;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tags a {</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">color:#f0c175;</p>
+<p class="p1">font-size:13px;</p>
+<p class="p1">letter-spacing:3px;</p>
+<p class="p1">font-family: 'pen', sans-serif;</p>
+<p class="p1">font-weight:normal;</p>
+<p class="p1">text-transform:uppercase;</p>
+<p class="p1">width:30%;</p>
+<p class="p1">overflow:hidden;</p>
+<p class="p1">display:inline-block;</p>
+<p class="p1">padding-left:7px;</p>
+<p class="p1">padding-right:4px;</p>
+<p class="p1">padding-top:7px;</p>
+<p class="p1">padding-bottom:7px;</p>
+<p class="p1">-moz-transition-duration:0.3s;</p>
+<p class="p1">-webkit-transition-duration:0.3s;</p>
+<p class="p1">-o-transition-duration:0.3s;</p>
+<p class="p1">border: 2px dashed #ffe6b3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tags a:hover {</p>
+<p class="p1">color:#fff;</p>
+<p class="p1">background-color:#ffe6b3;</p>
+<p class="p1">-moz-transition-duration:0.3s;</p>
+<p class="p1">-webkit-transition-duration:0.3s;</p>
+<p class="p1">-o-transition-duration:0.3s;</p>
+<p class="p1">border: 2px dashed #FFF;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#pagination {</p>
+<p class="p1">border:2px dashed #ffe6b3; background-color:white; width:570px; margin:0 auto; height:35px; padding-left:30px; padding-right:30px;padding-top:10px; padding-bottom:10px; text-align:center;position:relative;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.quotes {display: none;}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;img src="http://i.imgur.com/rxUAQq2.png" class="rt"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="title"&gt;</p>
+<p class="p1">&lt;center&gt;&lt;a href="/" title="home"&gt;&lt;img src="http://i.imgur.com/OPamdiN.png"&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;ul class="tabs"&gt;</p>
+<p class="p1">&lt;li class="tab-link current" data-tab="tab-1"&gt;Main&lt;/li&gt;</p>
+<p class="p1">&lt;li class="tab-link" data-tab="tab-2"&gt;Characters&lt;/li&gt;</p>
+<p class="p1">&lt;li class="tab-link" data-tab="tab-3"&gt;Media&lt;/li&gt;</p>
+<p class="p1">&lt;li class="tab-link" data-tab="tab-4"&gt;Timeline&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="top"&gt;&lt;/center&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;center&gt;</p>
+<p class="p1">&lt;div style="position:absolute; height:40px; overflow-y:auto; width:400px;padding:20px; padding-top:none; background:white; padding-bottom:none;border-top:2px dashed #ffe6b3;border-bottom:2px dashed #ffe6b3;"&gt;&lt;center&gt;</p>
+<p class="p1">Who's Kageyama Tobio's #1 fan? By the end of the school year, everyone in Japan will know that it's YOU!!!</p>
+<p class="p1">&lt;/div&gt;&lt;/center&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/center&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="container"&gt;</p>
+<p class="p1">&lt;div id="entries"&gt;</p>
+<p class="p1">&lt;div id="tab-1" class="tab-content current"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="posts"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Main&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Updates&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;u&gt;02/29/16&lt;/u&gt;: Base made &amp; chapter titles added to timeline.</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Credits&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;a href="http://icon-princess.tumblr.com/post/92866045406/marika-tachibana-icons" target="_blank"&gt;You icons&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://kingofthecourt.dreamwidth.org/430.html" target="_blank"&gt;Kageyama icons&lt;/a&gt;</p>
+<p class="p1">&lt;a href="http://crow-with-a-shortcake.tumblr.com/post/128496352721/this-pic-of-kageyama-looks-like-hes-holding" target="_blank"&gt;Kageyama corner&lt;/a&gt;</p>
+<p class="p1">&lt;a href="URL goes here" target="_blank"&gt;#Tag&lt;/a&gt;</p>
+<p class="p1">&lt;a href="URL goes here" target="_blank"&gt;#Tag&lt;/a&gt;</p>
+<p class="p1">&lt;a href="http://espoirthemes.tumblr.com/" target="_blank"&gt;Theme&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="tab-2" class="tab-content"&gt;</p>
+<p class="p1">&lt;div id="posts"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Characters&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;You&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="bios"&gt;</p>
+<p class="p1">&lt;div class="floatleft"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/98kXz6W.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/oCrIWiF.jpg"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatright"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/Rg8Wmeh.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/HkOHAFK.jpg"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatcenter"&gt;</p>
+<p class="p1">&lt;u&gt;Year&lt;/u&gt;: 1-5 (Karasuno)&lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Hobbies&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Best Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Worst Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Kageyama Tobio&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="bios"&gt;</p>
+<p class="p1">&lt;div class="floatleft"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/YbYNMQn.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/esUnQiN.png"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatright"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/qjHmrix.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/heYmDkJ.png"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatcenter"&gt;</p>
+<p class="p1">&lt;u&gt;Year&lt;/u&gt;: 3-3 (Karasuno)&lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Hobbies&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Best Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Worst Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Kageyama Tobio&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="bios"&gt;</p>
+<p class="p1">&lt;div class="floatleft"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/YbYNMQn.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/esUnQiN.png"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatright"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/qjHmrix.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/heYmDkJ.png"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="floatcenter"&gt;</p>
+<p class="p1">&lt;u&gt;Year&lt;/u&gt;: 3-3 (Karasuno)&lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Hobbies&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Best Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;u&gt;Worst Subject&lt;/u&gt;: &lt;br&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;div id="tab-3" class="tab-content"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="posts"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Media&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="media"&gt;</p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;&lt;b&gt;OP&lt;/b&gt;: &lt;a href="https://kanpekimusic.wordpress.com/2013/04/23/miwa-%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB-%E6%AD%8C%E8%A9%9E-miracle-lyrics/" title="source" target="_blank"&gt;miwa - miracle&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe class="tumblr_audio_player tumblr_audio_player_139169275947" src="http://jasminerva.com/post/139169275947/audio_player_iframe/jasminerva/tumblr_o2fs1khZdd1ss5n20?audio_file=https%3A%2F%2Fdl.dropboxusercontent.com%2Fs%2F39m0orb7irf6nv4%2Fkageyamamiracle.mp3&amp;color=white&amp;simple=1" frameborder="0" allowtransparency="true" scrolling="no" width="208" height="27"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;div id="lyrimg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/BoJy5go.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/IJp5esj.png?1"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/FdWAA14.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/AKOMmSQ.jpg"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">Under the sky where the sunshine blazes down, one smile becomes visible&lt;br&gt;</p>
+<p class="p1">I dive into the love of the summer&lt;br&gt;</p>
+<p class="p1">On the waves of my heart drifting about, you washed ashore&lt;br&gt;</p>
+<p class="p1">These feelings become passionate&lt;br&gt;</p>
+<p class="p1">This fever being transmitted through the palm of my hand, isn't felt by just me, is it&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">You glisten so brightly, since when did this love begin&lt;br&gt;</p>
+<p class="p1">I'll run through it all barefooted&lt;br&gt;</p>
+<p class="p1">When you flap your wings you'll pass through the moment, don't you forget&lt;br&gt;</p>
+<p class="p1">The strawberry flavored snow cone, when it melted I had painful feelings&lt;br&gt;</p>
+<p class="p1">But when I'm with you ×××××&lt;br&gt;</p>
+<p class="p1">When I release my heart that was secluded to itself, I come to see the world.&lt;br&gt;</p>
+<p class="p1">Glistening this much, I don't get gloomy&lt;br&gt;</p>
+<p class="p1">It's too early for it to become a memory, without hesitation I rush out&lt;br&gt;</p>
+<p class="p1">I'm sure I can go anywhere, sun, don't you go down&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Always wanting to see you, this love is always a little painful&lt;br&gt;</p>
+<p class="p1">Hey look, this short summer, makes us accelerate&lt;br&gt;</p>
+<p class="p1">This moment we'll never get back, hold on to it&lt;br&gt;</p>
+<p class="p1">Before the fireworks that were launched into the night sky disappear, quick make a wish&lt;br&gt;</p>
+<p class="p1">When I'm with you ×××××&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">You glisten so brightly, since when did this love begin&lt;br&gt;</p>
+<p class="p1">I'll run through it all barefooted&lt;br&gt;</p>
+<p class="p1">When you flap your wings you'll pass through the moment, don't you forget&lt;br&gt;</p>
+<p class="p1">The strawberry flavored snow-cone, when it melted I had painful feelings&lt;br&gt;</p>
+<p class="p1">But when I'm with you ×××××</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="media"&gt;</p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;&lt;b&gt;ED&lt;/b&gt;: &lt;a href="http://renai-junkie.tumblr.com/post/75173129297/aiko-lyrics-milk" title="source" target="_blank"&gt;aiko - milk&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe class="tumblr_audio_player tumblr_audio_player_139169380602" src="http://jasminerva.com/post/139169380602/audio_player_iframe/jasminerva/tumblr_o2fs6olRFl1ss5n20?audio_file=https%3A%2F%2Fdl.dropboxusercontent.com%2Fs%2F4dez15xj74201nk%2Fkageyamamilk.mp3&amp;color=white&amp;simple=1" frameborder="0" allowtransparency="true" scrolling="no" width="208" height="27"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;div id="lyrimg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/9RgxIui.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/NcjI5G8.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/tQYr8nQ.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/HaPmua8.png?1"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">Today I practiced smiling in the mirror again&lt;br&gt;</p>
+<p class="p1">Whenever I can't smile nicely I get depressed, that's me&lt;br&gt;</p>
+<p class="p1">When I go to sleep I dream about this and that&lt;br&gt;</p>
+<p class="p1">When I'm awake, I fall in love sometimes too&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Hey, look into my eyes, hey, look at my mouth&lt;br&gt;</p>
+<p class="p1">I want us to be together in the quiet, slow&lt;br&gt;</p>
+<p class="p1">Bright white light blurring the snow, the milk&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">We passed by each other earlier, but I couldn't bring myself to say anything to you&lt;br&gt;</p>
+<p class="p1">I actually hate vague hellos&lt;br&gt;</p>
+<p class="p1">Before my feelings cool down, I...&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">I just looked at your name, blinking, lighting up the phone&lt;br&gt;</p>
+<p class="p1">that I fumbled around in the darkness for, over and over again&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Hey, look into my eyes, hey, look at my mouth&lt;br&gt;</p>
+<p class="p1">The future will change in the blink of an eye&lt;br&gt;</p>
+<p class="p1">We can't be together today or tomorrow&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">I've had just one miracle happen to me: meeting you that day meant everything&lt;br&gt;</p>
+<p class="p1">Because you and I, we definitely can't keep living our lives alone&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Hey, look into my eyes, hey, look at my mouth&lt;br&gt;</p>
+<p class="p1">I want us to be together in the quiet, slow&lt;br&gt;</p>
+<p class="p1">Bright white light blurring the snow, the milk&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">We passed by each other earlier, but I couldn't make myself call you&lt;br&gt;</p>
+<p class="p1">I actually hate ambiguous greetings&lt;br&gt;</p>
+<p class="p1">Before my feelings cool down, let's...&lt;br&gt;</p>
+<p class="p1">Even if I had a world that made my heart dance here right next to me&lt;br&gt;</p>
+<p class="p1">I'd rather have this broken world we're in, where I can touch your messy hair</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="media"&gt;</p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;&lt;a href="http://mondainaiyo.blogspot.ca/2014/04/honey-english-lyrics.html" title="source" target="_blank"&gt;Ohashi Trio - Honey&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe class="tumblr_audio_player tumblr_audio_player_139157317632" src="http://jasminerva.com/post/139157317632/audio_player_iframe/jasminerva/tumblr_o2f7zedV2v1ss5n20?audio_file=https%3A%2F%2Fdl.dropboxusercontent.com%2Fs%2F4o2ci6ga8lxp1hz%2Fkageyamahoney.mp3&amp;color=white&amp;simple=1" frameborder="0" allowtransparency="true" scrolling="no" width="208" height="27"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;div id="lyrimg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/9uygFeZ.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/bJTHuV7.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/CPC5qUZ.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/VS00jay.jpg"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">The world you have seen&lt;br&gt;</p>
+<p class="p1">is like completely different&lt;br&gt;</p>
+<p class="p1">It seems so to my eyes&lt;br&gt;</p>
+<p class="p1">I wonder if you ever were in love&lt;br&gt;</p>
+<p class="p1">Your black eyes are&lt;br&gt;</p>
+<p class="p1">similar to my eyes&lt;br&gt;</p>
+<p class="p1">And because of this&lt;br&gt;</p>
+<p class="p1">I started to like you&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">If you find&lt;br&gt;</p>
+<p class="p1">a single key&lt;br&gt;</p>
+<p class="p1">A rainbow colour's shower&lt;br&gt;</p>
+<p class="p1">A new story will be starting from here&lt;br&gt;</p>
+<p class="p1">I met with you&lt;br&gt;</p>
+<p class="p1">We cried&amp;nbsp;in the&amp;nbsp;night together&lt;br&gt;</p>
+<p class="p1">Knowing the pain of hurting each other&lt;br&gt;</p>
+<p class="p1">Getting to know the meaning of kindness for the first time&lt;br&gt;</p>
+<p class="p1">Because I believe in you only&lt;br&gt;</p>
+<p class="p1">Just the way you are, so&lt;br&gt;</p>
+<p class="p1">Smile and smile, by my side&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Bees are flying around&lt;br&gt;</p>
+<p class="p1">Looking for the&amp;nbsp;sweet honey&lt;br&gt;</p>
+<p class="p1">A soft sunlight&lt;br&gt;</p>
+<p class="p1">slips onto my cheek&lt;br&gt;</p>
+<p class="p1">The truth is that our hobbies&lt;br&gt;</p>
+<p class="p1">don't fit at all, but&lt;br&gt;</p>
+<p class="p1">We laugh the same way&lt;br&gt;</p>
+<p class="p1">Being hilarious is good&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">There is nothing like&lt;br&gt;</p>
+<p class="p1">fate or flashy things&lt;br&gt;</p>
+<p class="p1">But in the whole world&lt;br&gt;</p>
+<p class="p1">you are my only ally&lt;br&gt;</p>
+<p class="p1">So&amp;nbsp;I'll continue protecting you&lt;br&gt;</p>
+<p class="p1">Even though I don't do things like&lt;br&gt;</p>
+<p class="p1">Whispering you words of love everyday,&lt;br&gt;</p>
+<p class="p1">Please don't forget&lt;br&gt;</p>
+<p class="p1">that always, whatever happens,&lt;br&gt;</p>
+<p class="p1">My right hand will always&amp;nbsp;be here,&lt;br&gt;</p>
+<p class="p1">waiting by your left side&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">If you find&lt;br&gt;</p>
+<p class="p1">a single key&lt;br&gt;</p>
+<p class="p1">A rainbow colour's shower&lt;br&gt;</p>
+<p class="p1">A new story will be starting from here&lt;br&gt;</p>
+<p class="p1">I met with you&lt;br&gt;</p>
+<p class="p1">We cried&amp;nbsp;in the&amp;nbsp;night together&lt;br&gt;</p>
+<p class="p1">Knowing the pain of hurting each other&lt;br&gt;</p>
+<p class="p1">Getting to know the meaning of kindness for the first time&lt;br&gt;</p>
+<p class="p1">Because I believe in you only&lt;br&gt;</p>
+<p class="p1">Just the way you are, so&lt;br&gt;</p>
+<p class="p1">Smile and smile, by my side&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">From now on always&lt;br&gt;</p>
+<p class="p1">I'll keep on protecting you&lt;br&gt;</p>
+<p class="p1">Even though I don't do things like&lt;br&gt;</p>
+<p class="p1">Whispering you words of love everyday,&lt;br&gt;</p>
+<p class="p1">I believe in you only&lt;br&gt;</p>
+<p class="p1">Just the way you are, so&lt;br&gt;</p>
+<p class="p1">Smile please</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="media"&gt;</p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;&lt;a href="http://gekikira.livejournal.com/2026.html" title="source" target="_blank"&gt;back number - love&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe class="tumblr_audio_player tumblr_audio_player_139168056852" src="http://jasminerva.com/post/139168056852/audio_player_iframe/jasminerva/tumblr_o2fq9l02a71ss5n20?audio_file=https%3A%2F%2Fdl.dropboxusercontent.com%2Fs%2Flaz4zonjy2q0v5i%2Fkageyamakoi.mp3&amp;color=white&amp;simple=1" frameborder="0" allowtransparency="true" scrolling="no" width="208" height="27"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;div id="lyrimg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/YOstITd.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/0wYMLIF.png?1"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/CdfY4D2.png"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/fTx6JCz.png"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">I watched you blankly&lt;br&gt;</p>
+<p class="p1">From the school's window&lt;br&gt;</p>
+<p class="p1">As I thought, you're really cute&lt;br&gt;</p>
+<p class="p1">The image of you laughing with your friends&lt;br&gt;</p>
+<p class="p1">That I'm fascinated by&lt;br&gt;</p>
+<p class="p1">I won't be able to see it anymore.&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">I don't like to boast&lt;br&gt;</p>
+<p class="p1">But even so, I'm always looking out for you&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Surely&lt;br&gt;</p>
+<p class="p1">I think about you more than anyone else does&lt;br&gt;</p>
+<p class="p1">Even today, even tomorrow, I will because&lt;br&gt;</p>
+<p class="p1">I really&lt;br&gt;</p>
+<p class="p1">Love you, I won't say it&lt;br&gt;</p>
+<p class="p1">I couldn't meet you before (No rush)&lt;br&gt;</p>
+<p class="p1">I couldn't say it before&lt;br&gt;</p>
+<p class="p1">Those hands...&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Things often don't go the way I want them to&lt;br&gt;</p>
+<p class="p1">Now isn't the first time.&lt;br&gt;</p>
+<p class="p1">But if it's possible&lt;br&gt;</p>
+<p class="p1">To just be with that girl&lt;br&gt;</p>
+<p class="p1">God, Buddha, somehow,&lt;br&gt;</p>
+<p class="p1">Can you let it be?&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">You smile as I pat your head&lt;br&gt;</p>
+<p class="p1">Such days that we painted&lt;br&gt;</p>
+<p class="p1">Today is the end of them.&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Surely&lt;br&gt;</p>
+<p class="p1">I think about you more than anyone else does&lt;br&gt;</p>
+<p class="p1">Even today, even tomorrow, I will because&lt;br&gt;</p>
+<p class="p1">I really&lt;br&gt;</p>
+<p class="p1">Love you, I won't say it&lt;br&gt;</p>
+<p class="p1">I couldn't meet you before (No rush)&lt;br&gt;</p>
+<p class="p1">I couldn't say it before&lt;br&gt;</p>
+<p class="p1">Hey, you...&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Your favorite movie and your favorite food&lt;br&gt;</p>
+<p class="p1">Your birthday, everything&lt;br&gt;</p>
+<p class="p1">I know them all&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">But&lt;br&gt;</p>
+<p class="p1">What are you wishing for everyday?&lt;br&gt;</p>
+<p class="p1">Who is it that you might be thinking about?&lt;br&gt;</p>
+<p class="p1">Eventually&lt;br&gt;</p>
+<p class="p1">Without realizing it, nothing is important&lt;br&gt;</p>
+<p class="p1">Even so, I'll always&lt;br&gt;</p>
+<p class="p1">Indeed, I'll always...&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Surely&lt;br&gt;</p>
+<p class="p1">I think about you more than anyone else does&lt;br&gt;</p>
+<p class="p1">Even today, even tomorrow, I will because&lt;br&gt;</p>
+<p class="p1">I really&lt;br&gt;</p>
+<p class="p1">Love you, I won't say it&lt;br&gt;</p>
+<p class="p1">I couldn't meet you before (No rush)&lt;br&gt;</p>
+<p class="p1">I couldn't say it before&lt;br&gt;</p>
+<p class="p1">Those hands...</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="media"&gt;</p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;&lt;a href="http://carlenne.livejournal.com/5316.html" title="source" target="_blank"&gt;immi - milk &amp; honey&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe class="tumblr_audio_player tumblr_audio_player_141633770587" src="http://jasminerva.com/post/141633770587/audio_player_iframe/jasminerva/tumblr_o4km2u9iO31ss5n20?audio_file=https%3A%2F%2Fwww.tumblr.com%2Faudio_file%2Fjasminerva%2F141633770587%2Ftumblr_o4km2u9iO31ss5n20&amp;color=white&amp;simple=1" frameborder="0" allowtransparency="true" scrolling="no" width="208" height="27"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;div id="lyrimg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/2ZeNGlS.jpg"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/1EJUTvC.png?1"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/dJzgJV6.png?1"&gt;</p>
+<p class="p1">&lt;img src="http://i.imgur.com/toue8xX.jpg"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">Because I'll accept&lt;br&gt;</p>
+<p class="p1">you who is too kind&lt;br&gt;</p>
+<p class="p1">Trust me! Trust me!&lt;br&gt;</p>
+<p class="p1">Be wilful once more&lt;br&gt;</p>
+<p class="p1">I want you to control me&lt;br&gt;</p>
+<p class="p1">with a reasonable amount of power&lt;br&gt;</p>
+<p class="p1">because things with too much freedom are lonely&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">What he likes are sweet sweet sweets&lt;br&gt;</p>
+<p class="p1">He's like a girl&lt;br&gt;</p>
+<p class="p1">I was surprised to see them all strewn about the room,&lt;br&gt;</p>
+<p class="p1">a small indication of his preference&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because he said something argumentative once again,&lt;br&gt;</p>
+<p class="p1">it makes me a bit taciturn&lt;br&gt;</p>
+<p class="p1">Nevertheless, he is a really rare boy&lt;br&gt;</p>
+<p class="p1">We're a contrastive pair&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">It's OK if we can't&lt;br&gt;</p>
+<p class="p1">understand a little about each other&lt;br&gt;</p>
+<p class="p1">I like the parts of us that are different &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">For the 39th time I fell asleep in the bathtub again&lt;br&gt;</p>
+<p class="p1">You are so warm and vast&lt;br&gt;</p>
+<p class="p1">that I can give myself over to this weight&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because I'll accept&lt;br&gt;</p>
+<p class="p1">you who is too kind&lt;br&gt;</p>
+<p class="p1">Trust me! Trust me!&lt;br&gt;</p>
+<p class="p1">Be wilful once more&lt;br&gt;</p>
+<p class="p1">I want you to control me&lt;br&gt;</p>
+<p class="p1">with a reasonable amount of power&lt;br&gt;</p>
+<p class="p1">because things with too much freedom are lonely &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because we have to change&lt;br&gt;</p>
+<p class="p1">in time&lt;br&gt;</p>
+<p class="p1">let me feel at ease&lt;br&gt;</p>
+<p class="p1">that it's not just me who's wilful&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">You're so cute when you're angry&lt;br&gt;</p>
+<p class="p1">If you're just going to leave the room&lt;br&gt;</p>
+<p class="p1">at least let me hear a sharp parting remark&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because you're immature&lt;br&gt;</p>
+<p class="p1">compared to me who can't help but be strict with myself &lt;br&gt;</p>
+<p class="p1">We can't cover up&lt;br&gt;</p>
+<p class="p1">this degree of difference &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">You have a way of saying things in a roundabout way&lt;br&gt;</p>
+<p class="p1">Your true heart is hiding&lt;br&gt;</p>
+<p class="p1">behind your kindness &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">With a pushy attitude&lt;br&gt;</p>
+<p class="p1">you go against my waves&lt;br&gt;</p>
+<p class="p1">Our non-stop love can't breathe&lt;br&gt;</p>
+<p class="p1">Let's gaze at one another while breathing with the same rhythm &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because I'll accept&lt;br&gt;</p>
+<p class="p1">you who is too kind&lt;br&gt;</p>
+<p class="p1">Trust me! Trust me!&lt;br&gt;</p>
+<p class="p1">Be wilful once more&lt;br&gt;</p>
+<p class="p1">I want you to control me&lt;br&gt;</p>
+<p class="p1">with a reasonable amount of power&lt;br&gt;</p>
+<p class="p1">because things with too much freedom are lonely &lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">Because I'll accept&lt;br&gt;</p>
+<p class="p1">you who is too kind&lt;br&gt;</p>
+<p class="p1">Trust me! Trust me!&lt;br&gt;</p>
+<p class="p1">Be wilful once more&lt;br&gt;</p>
+<p class="p1">I want you to try and be sure&lt;br&gt;</p>
+<p class="p1">of what easily breaks&lt;br&gt;</p>
+<p class="p1">Because we can become strong by colliding against each other</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;div id="tab-4" class="tab-content"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="posts"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Timeline&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;One: The e&lt;span style="font-style:italic;font-weight:bold;"&gt;STEAM&lt;/span&gt;ed Kageyama Tobio!&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Two: Casein Point: Chili Peppers&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Three: 70% Whipped Team&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Four: A Revenge Best Soft-Served&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Five: Skimmed Surfaces&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Six: A Turn for the Worse&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Seven: The Big Cheese &amp; The Super Cheesy&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Eight: How Dairy&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Nine: No Use Crying Over&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;&lt;span&gt;Ten: Whole&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="tags"&gt;</p>
+<p class="p1">&lt;p&gt;Content goes here.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="pagination"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;span class="quotes"&gt;</p>
+<p class="p1">Kageyama didn’t trust himself enough to remember people who weren’t associated in any way with volleyball, but you were indeed somewhat familiar.</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;span class="quotes"&gt;</p>
+<p class="p1">Kageyama Tobio’s final year in high school had started only a week ago, and already it had been turned upside down by someone half his size.</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;span class="quotes"&gt;</p>
+<p class="p1">“You seem like you know a lot about Kageyama-kun,” Airi stated, “but also, very little.” She gave you a small smile, filled with understanding.</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;span class="quotes"&gt;</p>
+<p class="p1">&lt;i&gt;&lt;b&gt;HWEEEEE!&lt;/b&gt;&lt;/i&gt; was the sound a tea kettle made at boiling point. It was also a sound that Kageyama was making quite often lately.</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script type="text/javascript"&gt;</p>
+<p class="p1">(function() {</p>
+<p class="p2"><br></p>
+<p class="p1">var quotes = $(".quotes");</p>
+<p class="p1">var quoteIndex = -1;</p>
+<p class="p2"><br></p>
+<p class="p1">function showNextQuote() {</p>
+<p class="p1">++quoteIndex;</p>
+<p class="p1">quotes.eq(quoteIndex % quotes.length)</p>
+<p class="p1">.fadeIn(500)</p>
+<p class="p1">.delay(3500)</p>
+<p class="p1">.fadeOut(500, showNextQuote);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">showNextQuote();</p>
+<p class="p2"><br></p>
+<p class="p1">})();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- octomoosey @ tumblr --&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;&lt;title&gt;{Title}&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="shortcut icon" href="{Favicon}"&gt;</p>
+<p class="p1">&lt;link rel="alternate" type="application/rss+xml" href="{RSS}"&gt;</p>
+<p class="p1">&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">$(document).ready(function(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var totWidth=0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var positions = new Array();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$('#slides .slide').each(function(i){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>positions[i]= totWidth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>totWidth += $(this).width();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(!$(this).width())</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert("");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$('#slides').width(totWidth);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$('#menu ul li a').click(function(e){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>$('li.menuItem').removeClass('act').addClass('inact');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>$(this).parent().addClass('act');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var pos = $(this).parent().prevAll('.menuItem').length;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>$('#slides').stop().animate({marginLeft:-positions[pos]+'px'},800);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$('#menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');</p>
+<p class="p1">});&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style type='text/css'&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar-thumb {</p>
+<p class="p1">height:auto;</p>
+<p class="p1">background-color:#529ecc;} /** change scrollbar color here **/</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">::-webkit-scrollbar {</p>
+<p class="p1">height:9px;</p>
+<p class="p1">width:4px;</p>
+<p class="p1">background-color:transparent;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">iframe#tumblr_controls {</p>
+<p class="p1">right:3px !important;</p>
+<p class="p1">position: fixed !important;</p>
+<p class="p1">-webkit-transition: opacity 0.7s</p>
+<p class="p1">linear;opacity: 0.2;</p>
+<p class="p1">-webkit-transition: all 0.8s ease-out;</p>
+<p class="p1">-moz-transition: all 0.8s ease-out;</p>
+<p class="p1">transition: all 0.8s ease-out;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">iframe#tumblr_controls:hover{</p>
+<p class="p1">-webkit-transition: opacity 0.7s linear;</p>
+<p class="p1">opacity: 1;</p>
+<p class="p1">-webkit-transition: all 0.4s ease-out;</p>
+<p class="p1">-moz-transition: all 0.4s ease-out;</p>
+<p class="p1">transition: all 0.4s ease-out;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color:#000; /* background color */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-image: url('http://static.tumblr.com/83871df73f5288609f8f606af58fc0e0/86jccts/pAFnp67md/tumblr_static_3wi0ufdz3qasow0kc4scok4gk.jpg'); /** change background image url here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-position: top left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-attachment: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:110%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#fff;<span class="Apple-converted-space">              </span>/* text color */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:baskerville; /** font style **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;}<span class="Apple-converted-space">        </span>/** font size **/</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>outline:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-outline-style:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#529ecc; <span class="Apple-converted-space">        </span>/** change link color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#eee;<span class="Apple-converted-space">            </span>/** change link hover color here **/</p>
+<p class="p1"><span class="Apple-converted-space">     </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">blockquote {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:2px 7px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:3px 0 3px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-left:1px dashed #fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color:transparent;}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">blockquote img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:auto;}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">b, strong {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#529ecc;}<span class="Apple-converted-space">      </span>/** change bold text color here **/</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">i, em {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#529ecc;}<span class="Apple-converted-space">      </span>/** change italic text color here **/</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">h1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-bottom:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">h2 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#529ecc;<span class="Apple-converted-space">        </span>/** change heading 2 color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-bottom:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">.wrap{ <span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left:-522px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 1000px;}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">#credit {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>bottom:25px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>right:25px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:0.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:5px;}</p>
+<p class="p2"><br></p>
+<p class="p1">#slides{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:540px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow:hidden;}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">.slide{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float:left;}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">#sider {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left:815px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:200px;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">#menu{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:0px;}</p>
+<p class="p2"><br></p>
+<p class="p1">ul{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:35px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:0px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>list-style:none !important;}</p>
+<p class="p2"><br></p>
+<p class="p1">li{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-top:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:33px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:block}</p>
+<p class="p2"><br></p>
+<p class="p1">li a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:35px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow:hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">li a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:200px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all 0.7s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all 0.7s ease;}</p>
+<p class="p2"><br></p>
+<p class="p1">.slide{</p>
+<p class="p1"><span class="Apple-tab-span">	</span>float:left;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width: 540px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:justify;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 500px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow-y:scroll;}</p>
+<p class="p2"><br></p>
+<p class="p1">.slidetx {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:20px}</p>
+<p class="p2"><br></p>
+<p class="p1">#container{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-top:1px solid #fff;<span class="Apple-converted-space">      </span>/** change top border color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom:1px solid #fff; <span class="Apple-converted-space">  </span>/** change bottom border color here **/</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin-left:250px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align:justify;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width:540px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 500px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position:fixed;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>overflow:hidden;}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:9px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1px solid #fff;/** change navigation page link border color **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#fff; /** change navigation page link text color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-ms-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all .8s ease-in-out;}</p>
+<p class="p2"><br></p>
+<p class="p1">#nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1px solid #fff; /** change link hover border color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow:inset 504px 0 0 #fff;<span class="Apple-converted-space">  </span>/** change link fill color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#000;<span class="Apple-converted-space">            </span>/** change link text hover color here **/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-ms-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-o-transition: all .8s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all .8s ease-in-out;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">table {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top:-9px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left:-2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-collapse: collapse;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">td { <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: auto;}<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">#rel img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:5px solid #fff; /* relationships icon border color */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition:all 0.3s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition:all 0.3s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition:all 0.3s ease-out;}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">#rel:hover img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:5px solid #529ecc; /* relationships icon border hover color */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-transition:all 0.3s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-moz-transition:all 0.3s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition:all 0.3s ease-out;}</p>
+<p class="p2"><br></p>
+<p class="p1">#links{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-left:595px;<span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="wrap"&gt;</p>
+<p class="p1">&lt;div id="links"&gt;&lt;a href="/"&gt;home&lt;/a&gt; ♦</p>
+<p class="p1">&lt;a href="/ask"&gt;ask&lt;/a&gt; ♦</p>
+<p class="p1">&lt;a href="/submit"&gt;submit&lt;/a&gt; ♦</p>
+<p class="p1">&lt;a href="/archive"&gt;archive&lt;/a&gt; ♦</p>
+<p class="p1">&lt;a href="https://www.tumblr.com/dashboard"&gt;dash&lt;/a&gt; &lt;/div&gt;</p>
+<p class="p1">&lt;div id="sider"&gt;</p>
+<p class="p1">&lt;div id="menu"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- if you add another 'page' be sure to add a link here --&gt;</p>
+<p class="p1">&lt;li class="menuItem"&gt;&lt;a href=""&gt;01. about&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="menuItem"&gt;&lt;a href=""&gt;02. info&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="menuItem"&gt;&lt;a href=""&gt;03. navigation&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="menuItem"&gt;&lt;a href=""&gt;04. relationships&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class="menuItem"&gt;&lt;a href=""&gt;05. verses&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div id="container"&gt;</p>
+<p class="p1">&lt;div id="slides"&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- this is the start of the first slide --&gt;</p>
+<p class="p1">&lt;div class="slide"&gt;&lt;div class="slidetx"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;H i s t o r y&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;b&gt;You can add as much text as you like and any images - the box will add a scroll bar when needed!&lt;/b&gt;&lt;p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;img src="https://31.media.tumblr.com/2603c3495b0ddd29fbe671dc025dae06/tumblr_inline_nc7gtzdnQL1si7bjl.gif"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;T o d a y&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- end of the first slide - copy from start to end and paste below to ass more pages --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="slide"&gt;&lt;div class="slidetx"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;D i s c l a i m e r;&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;G u i d e l i n e s || R u l e s;&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;C r e d i t s;&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="slide"&gt;&lt;div class="slidetx"&gt;</p>
+<p class="p1">&lt;h2&gt;section title&lt;/h2&gt;</p>
+<p class="p1">&lt;div id="nav"&gt;</p>
+<p class="p1">&lt;a href=""&gt;links go here&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;more links&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;even more...&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;another section&lt;/h2&gt;</p>
+<p class="p1">&lt;div id="nav"&gt;</p>
+<p class="p1">&lt;a href=""&gt;you can even add them in sections&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;more links&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;even more...&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;add as many links as you like&lt;/a&gt;</p>
+<p class="p1">&lt;a href=""&gt;to each section&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;and another&lt;/h2&gt;</p>
+<p class="p1">&lt;div id="nav"&gt;</p>
+<p class="p1">&lt;a href=""&gt;another one&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;more links&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href=""&gt;even more...&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="slide"&gt;&lt;div class="slidetx"&gt;</p>
+<p class="p1">&lt;table&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- character one starts here --&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt; &lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;&lt;!-- add the character link here --&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- add the url to the icon here --&gt;</p>
+<p class="p1">&lt;img src="https://41.media.tumblr.com/2288e3b9f1673609d6c6eda1606d54de/tumblr_inline_np64h3Xz5S1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- add your description here --&gt;</p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- character one ends here - copy from start to end and paste to add more characters --&gt;</p>
+<p class="p2"><span class="Apple-converted-space">     </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;<span class="Apple-converted-space">  </span>&lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;img src="https://41.media.tumblr.com/6ad7b11365c6db7155acab6661a4a384/tumblr_inline_np64hmSUVz1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space">         </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;<span class="Apple-converted-space">  </span>&lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;img src="https://40.media.tumblr.com/89889431a63e7f0b40a3c795b1428c9f/tumblr_inline_np64hxwfwj1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="slide"&gt;&lt;div class="slidetx"&gt;</p>
+<p class="p1">&lt;table&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;!-- verses page works the same as the character page! --&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt; &lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;img src="https://41.media.tumblr.com/2288e3b9f1673609d6c6eda1606d54de/tumblr_inline_np64h3Xz5S1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space">     </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;<span class="Apple-converted-space">  </span>&lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;img src="https://41.media.tumblr.com/6ad7b11365c6db7155acab6661a4a384/tumblr_inline_np64hmSUVz1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space">         </span></p>
+<p class="p1">&lt;tr&gt;&lt;td&gt;<span class="Apple-converted-space">  </span>&lt;div id="rel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;a href="/"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;img src="https://40.media.tumblr.com/89889431a63e7f0b40a3c795b1428c9f/tumblr_inline_np64hxwfwj1rp2lgk_540.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;</p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;td&gt;&lt;div style="height:100px; overflow:auto"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p2"><span class="Apple-converted-space">       </span></p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div id="credit"&gt;&lt;a href="http://octomoosey.tumblr.com/" title="theme by octomoosey"&gt;&lt;img src="https://31.media.tumblr.com/ce8b580be9fa9afaa442fdb216c9b293/tumblr_inline_nj1tziQKpe1ronkfd.png"&gt;&lt;/a&gt;&lt;/div&gt;&lt;!-- do not remove --&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
