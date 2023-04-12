@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+BOOKS PAGE
+By Paige @ neonbikethemes.tumblr.com
+last updated 8.16.17
+
+Credits
+    - filtering code by zsu @creatre
+ 
+Rules:
+    - Do not steal code or design
+    - Do not remove/alter credit
+    - Please like/reblog the post
+   
+Thanks!
+ 
+-->
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<title>{Title}{block:TagPage} - {Tag} {/block:TagPage} {block:SearchPage} - {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}- {PostSummary} {/block:PostSummary}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+ 
+ 
+
+<!-- TOOLTIPS -->
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:100,
+               tip_fade_speed:200
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+ 
+<!-- FONT SCRIPTS -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+ 
+ 
+<!-- CSS -->
+<style type=text/css>
+
+
+/* TOOLTIPS */
+#s-m-t-tooltip{
+    max-width:250px;
+    margin:15px;
+    padding: 0px 5px 2px 5px;
+    border-radius:3px;
+    background:#000;
+    color:#fff;
+    z-index:999999;
+    font-size:10px;
+    font-style:italic;
+    text-transform:lowercase;
+}
+ 
+/* STUFF */
+ 
+body{
+    font-family:'Open Sans', Helvetica, sans-serif;
+    color:#000000;
+    margin:0;
+    background:#f0f0f0 url('');
+    background-attachment:fixed;
+}
+ 
+a {
+    text-decoration:none;
+    color:#000;
+}
+ 
+a:hover {
+    text-decoration:none;
+    color:#a0a0a0;
+}
+
+p{
+    margin: 0px 0px 10px 0px;
+}
+
+ul{
+    list-style-type:square;
+}
+
+ol{
+    list-style-type:lower-roman;
+}
+ 
+.navbar{
+    position:fixed;
+    background:#fff;
+    text-align:left;
+    width:100%;
+    height:50px;
+    top:0px;
+    z-index:99999999999999;
+}
+ 
+#title{
+    float:left;
+    margin-left:25px;
+    margin-top:18px;
+    text-transform:uppercase;
+    text-align:center;
+    font-size:10px;
+    letter-spacing:1px;
+    font-weight:bold;
+    z-index:9999999999;
+}
+ 
+#navlinks{
+    float:right;
+    margin-top:13px;
+    margin-right:20px;
+    text-align:right;
+    z-index:999999999;
+}
+ 
+.navlink{
+    background:#fff;
+    border:0px solid #a0a0a0;
+    padding:4px;
+    padding-left:8px;
+    padding-right:8px;
+    margin-left:3px;
+    margin-right:3px;
+    font-size:10px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+    text-transform:uppercase;
+}
+ 
+/* CONTAINER */
+ 
+.container{
+    width:820px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:100px;
+}
+ 
+article{
+    float:left;
+    border: 0px solid #dbdbdb;
+    padding:0px;
+    margin: 15px 25px 10px 0px;
+    font-size:9px;
+    text-align:left;
+    width:180px;
+}
+article img{
+    width:100%;
+}
+
+.story {
+    transition-duration:.5s;
+    -moz-transition-duration:.5s;
+    -webkit-transition-duration:.5s;
+    -o-transition-duration:.5s;
+}
+ 
+.sectiontitle{
+    background:#fff;
+    font-size:11px;
+    padding:10px;
+    margin:0px;
+    margin-bottom:1px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-bottom: 0px solid #dbdbdb;
+}
+
+.abt{
+    font-size:9px;
+    font-style:italic;
+    letter-spacing:1px;
+    margin-bottom:-1px;
+    padding:7px;
+    padding-left:11px;
+    background:#fff;
+    border-bottom:1px solid #eeeeee;
+    margin-bottom:0px;
+    -webkit-transition: all .5s;
+    text-align:left;
+}
+
+.txt{
+    font-size:9px;
+    letter-spacing:1px;
+    margin-bottom:-1px;
+    padding:7px;
+    padding-left:11px;
+    background:#fff;
+    border-bottom:1px solid #eeeeee;
+    margin-bottom:0px;
+    -webkit-transition: all .5s;
+    text-align:left;
+    text-align:center;
+}
+ 
+#sort{
+    position:relative;
+    margin:120px auto 0 auto;
+    font-size:10px;
+    letter-spacing:1px;
+    width:770px;
+    text-align:center;
+    padding-right:25px;
+}
+
+#sort ul{
+    list-style-type:none;
+    margin-left:-40px;
+}
+#sort li{
+    display:inline-block;
+    padding:5px 7px;
+    padding-left:11px;
+    background:#fff;
+    border-left:1px solid #eeeeee;
+    margin: 0 0 2px -3px;
+}
+
+.selected{
+    opacity:.4;
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+ 
+ 
+ 
+<div class="navbar">
+   
+    <div id="title">Books</div>
+   
+    <div id="navlinks">
+           
+        <a href="/">
+        <div class="navlink">Home</div></a>
+       
+        <a href="http://tumblr.com/dashboard">
+        <div class="navlink">Dashboard</div></a>
+           
+        <a href="http://neonbikethemes.tumblr.com">
+        <div class="navlink">Credit</div></a>
+           
+    </div>
+ 
+</div>
+
+
+<!----- Filter links ------>
+<div id="sort">
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+    
+    <li><b>sort </b></li>
+    <li><a href="#filter" data-option-filter=".story">all</a></li>
+    <li><a href="#filter" data-option-filter=".fic">fiction</a></li>
+    <li><a href="#filter" data-option-filter=".fantasy">fantasy</a></li>
+    <li><a href="#filter" data-option-filter=".scifi">sci-fi</a></li>
+    <li><a href="#filter" data-option-filter=".romance">romance</a></li>
+    <li><a href="#filter" data-option-filter=".fav">favorites</a></li>
+    
+    <!--
+    
+    Here's an explanation of how the tag system works:
+    
+    this is our exaple line:
+    <li><a href="#filter" data-option-filter=".fantasy">fantasy</a></li>
+    
+    the flter part (ex: data-option-filter=".fantasy") is the actual tag. You will use this tag and add it to the classes of the fic below. The tag cannot have a space in it. 
+    The word in between <a ...> and </a> will be the word that actualy appears on the website. (ex: Fantasy)
+    When you want to tag a fic as fantasy, you will add 'fantasy' to the list of classes at the beginning (see below for more info).
+    
+    to add a new tag, copy an paste one of the lines and edit it.
+    
+    -
+    
+    stars to copy paste:
+    ★☆☆☆☆
+    ★★☆☆☆
+    ★★★☆☆ 
+    ★★★★☆ 
+    ★★★★★
+    
+    -->
+    
+    
+</ul>
+</div>
+ 
+ 
+<!-- START CONTAINER --->
+<div class="container clearfix" >
+<!-- paste any new sections after this line -->
+ 
+
+
+<!-- START SECTION -->
+<article class="story HERES WHERE YOU WILL LIST TAGS">
+<!-- (above) all sections should have the story class, but you will also want to add the classes that apply to it. simply type each tag out in the class="..." section, and leave a space in between each tag.-->
+    <div class="sectiontitle">
+        <a href="http://link to buy the book">Book Example</a>
+    </div>
+    <div class="txt">author</div>
+    <div class="abt">
+        Cras eleifend odio nec nulla tincidunt, ut vulputate neque maximus. Proin tempor, massa vel maximus vehicula, est velit fermentum elit, quis venenatis tellus lorem vel ex. Aliquam erat volutpat. Cras vel neque at ex imperdiet venenatis. Phasellus accumsan finibus sapien, eu sagittis libero elementum id. Praesent sollicitudin quam nulla, volutpat dictum ligula eleifend quis. 
+    </div>
+    <div class="txt"> genre / ★★★★☆ <div>
+
+</article>
+<!-- END SECTION -->
+
+
+<!-- START SECTION -->
+<article class="story fic scifi">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41ge7%2BYdIYL.jpg">
+    <!-- to use an image, you will need to paste the image source code. to get this code, find the picture on the internet somehwere, right click on it, and select "copy image url" -->
+    <div class="sectiontitle">
+        <a href="/">Book Example With Image</a>
+    </div>
+    <div class="txt">by author</div>
+    <div class="abt">
+        Phasellus accumsan finibus sapien, eu sagittis libero elementum id. Praesent sollicitudin quam nulla, volutpat dictum ligula eleifend quis. Duis ut elit vestibulum, vestibulum diam in, sollicitudin ante. 
+    </div>
+    <div class="txt"> genre / ★★★★☆ <div>
+
+</article>
+<!-- END SECTION -->
+
+
+<!-- START SECTION -->
+<article class="story fic romance">
+    <div class="sectiontitle">
+        <a href="/">Book Example Without Image</a>
+    </div>
+    <div class="txt">by author</div>
+    <div class="abt">
+        Phasellus accumsan finibus sapien, eu sagittis libero elementum id. Praesent sollicitudin quam nulla, volutpat dictum ligula eleifend quis. Duis ut elit vestibulum, vestibulum diam in, sollicitudin ante. 
+    </div>
+    <div class="txt"> genre / ★★★★☆ <div>
+
+</article>
+<!-- END SECTION -->
+
+<!-- START SECTION -->
+<article class="story fic fv">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41ge7%2BYdIYL.jpg">
+    <div class="sectiontitle">
+        <a href="/">Book Example With Image</a>
+    </div>
+    <div class="txt">by author</div>
+    <div class="abt">
+        Phasellus accumsan finibus sapien, eu sagittis libero elementum id. Praesent sollicitudin quam nulla, volutpat dictum ligula eleifend quis. Duis ut elit vestibulum, vestibulum diam in, sollicitudin ante. 
+    </div>
+    <div class="txt"> genre / ★★★★☆ <div>
+
+</article>
+<!-- END SECTION -->
+
+
+
+<!-- Tto make new sections, paste before this line! -->
+</div>
+</div>
+
+
+<!------- filter scripts -------->
+ <script src="http://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+ <script src="http://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ <script>
+ $(function(){
+ var $container = $('.container');
+ $container.isotope({
+ itemSelector : '.story'
+ });
+ var $optionSets = $('#sort .option-set'),
+ $optionLinks = $optionSets.find('a');
+ 
+ $optionLinks.click(function(){
+ var $this = $(this);
+ // don't proceed if already selected
+ if ( $this.hasClass('selected') ) {
+ return false;
+ }
+ var $optionSet = $this.parents('.option-set');
+ $optionSet.find('.selected').removeClass('selected');
+ $this.addClass('selected');
+ // make option object dynamically, i.e. { filter: '.my-filter-class' }
+ var options = {},
+ key = $optionSet.attr('data-option-key'),
+ value = $this.attr('data-option-filter');
+ // parse 'false' as false boolean
+ value = value === 'false' ? false : value;
+ options[ key ] = value;
+ if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+ // changes in layout modes need extra logic
+ changeLayoutMode( $this, options )
+ } else {
+ // otherwise, apply new options
+ $container.isotope( options );
+ }
+ return false;
+ });
+ });
+ </script>
+ <!-----end filter scripts------>
+ 
+ 
+</body>
